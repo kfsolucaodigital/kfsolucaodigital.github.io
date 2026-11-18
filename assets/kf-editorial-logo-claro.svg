@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 192" role="img" aria-labelledby="kf-light-title kf-light-desc">
+  <title id="kf-light-title">KF Solução Digital — assinatura para fundo claro</title>
+  <desc id="kf-light-desc">Símbolo editorial KF acompanhado do nome KF Solução Digital em preto-tinta e azul-cobalto.</desc>
+  <circle cx="96" cy="96" r="96" fill="#151515"/>
+  <path d="M57 47V145" fill="none" stroke="#F3EFE7" stroke-width="18" stroke-linecap="square"/>
+  <path d="M65 97 109 48M65 97l48 50" fill="none" stroke="#F3EFE7" stroke-width="16" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M118 49v96M118 57h36M118 95h28" fill="none" stroke="#3157E8" stroke-width="14" stroke-linecap="square"/>
+  <rect x="151" y="137" width="13" height="13" fill="#3157E8"/>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#151515">
+    <text x="238" y="61" font-size="52" font-weight="700" letter-spacing="-1">KF</text>
+    <text x="238" y="113" font-size="40" font-weight="700" letter-spacing="-.5">Solução</text>
+  </g>
+  <line x1="238" y1="132" x2="650" y2="132" stroke="#CAC3B7"/>
+  <text x="240" y="166" fill="#3157E8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="8">DIGITAL</text>
+</svg>
