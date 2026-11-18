@@ -168,8 +168,12 @@ button { color: inherit; font: inherit; }
 .eyebrow-light { justify-content: center; color: #aaa6a0; }
 .contact h2 { margin: 0; font: 400 clamp(54px, 7.5vw, 105px)/.96 var(--serif); letter-spacing: -.055em; }
 .contact-content > p:not(.eyebrow) { max-width: 650px; margin: 34px auto 0; color: #aaa6a0; font-size: 18px; line-height: 1.7; }
-.contact-status { display: inline-flex; align-items: center; gap: 12px; margin-top: 40px; padding: 14px 18px; border: 1px solid #404040; color: #aaa6a0; font-size: 12px; }
-.contact-status i { width: 8px; height: 8px; border-radius: 50%; background: var(--cobalt); box-shadow: 0 0 0 5px rgba(49,87,232,.18); }
+.contact-actions { display: flex; flex-direction: column; align-items: center; gap: 24px; margin-top: 40px; }
+.contact-primary { min-width: 240px; background: var(--cobalt); color: white; }
+.contact-primary:hover { background: var(--cobalt-dark); }
+.contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 30px; }
+.contact-links a, .footer-contact-links a { padding-bottom: 5px; border-bottom: 1px solid #404040; color: #aaa6a0; font-size: 14px; transition: color .2s, border-color .2s; overflow-wrap: anywhere; }
+.contact-links a:hover, .footer-contact-links a:hover { color: var(--ivory); border-color: var(--cobalt); }
 .contact-arrow { position: absolute; z-index: 3; right: 36px; bottom: 34px; display: grid; place-items: center; width: 54px; height: 54px; border: 1px solid #555; border-radius: 50%; color: var(--cobalt); font-size: 22px; transition: background .25s, color .25s; }
 .contact-arrow:hover { background: var(--cobalt); color: white; }
 
@@ -177,6 +181,8 @@ button { color: inherit; font: inherit; }
 .footer-main { display: flex; justify-content: space-between; align-items: end; gap: 60px; padding-bottom: 54px; border-bottom: 1px solid #333; }
 .footer-main img { width: 190px; }
 .footer-main p { max-width: 430px; margin: 0; color: #8d8a85; line-height: 1.7; text-align: right; }
+.footer-details { display: grid; justify-items: end; gap: 22px; }
+.footer-contact-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 14px 24px; }
 .footer-meta { display: flex; justify-content: space-between; gap: 30px; padding-top: 24px; color: #696661; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
 
 @keyframes spin { to { transform: rotate(360deg); } }
@@ -236,8 +242,11 @@ button { color: inherit; font: inherit; }
   .about-portrait { min-height: 440px; }
   .contact { min-height: 650px; }
   .contact h2 { font-size: clamp(49px, 14vw, 75px); }
+  .contact-links { flex-direction: column; align-items: center; }
   .footer-main { align-items: flex-start; flex-direction: column; }
   .footer-main p { text-align: left; }
+  .footer-details { justify-items: start; }
+  .footer-contact-links { flex-direction: column; align-items: flex-start; }
   .footer-meta { flex-direction: column; }
 }
 
