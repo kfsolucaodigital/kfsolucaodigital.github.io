@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#151515">
+  <title>Página não encontrada — KF Solução Digital</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --ivory: #f3efe7;
+      --ink: #151515;
+      --cobalt: #3157e8;
+      --muted: #aaa6a0;
+      --line: #373737;
+      --sans: Inter, "Helvetica Neue", Arial, sans-serif;
+      --serif: Georgia, "Times New Roman", serif;
+    }
+
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--ink); color: var(--ivory); font-family: var(--sans); }
+    a { color: inherit; text-decoration: none; }
+    :focus-visible { outline: 3px solid var(--cobalt); outline-offset: 5px; }
+    .error-page { position: relative; min-height: 100svh; overflow: hidden; display: grid; grid-template-rows: auto 1fr auto; padding: clamp(24px, 4vw, 58px); }
+    .error-page::before { content: ""; position: absolute; width: min(76vw, 880px); aspect-ratio: 1; right: -16%; top: 50%; border: 1px solid var(--line); border-radius: 50%; transform: translateY(-50%); box-shadow: inset 0 0 0 110px var(--ink), inset 0 0 0 111px #2b2b2b; }
+    .error-brand { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: 13px; width: max-content; }
+    .error-brand img { width: 48px; height: 48px; }
+    .error-brand span { display: grid; gap: 4px; line-height: 1; }
+    .error-brand strong { font: 700 20px/.95 var(--serif); }
+    .error-brand small { color: var(--cobalt); font-size: 8px; font-weight: 800; letter-spacing: .3em; text-transform: uppercase; }
+    .error-content { position: relative; z-index: 1; align-self: center; max-width: 850px; padding: 70px 0; }
+    .error-code { margin: 0 0 28px; color: var(--muted); font-size: 14px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
+    .error-code::before { content: ""; display: inline-block; width: 34px; height: 1px; margin: 0 12px 4px 0; background: var(--cobalt); }
+    h1 { margin: 0; font: 400 clamp(58px, 9vw, 132px)/.92 var(--serif); letter-spacing: -.055em; }
+    h1 em { color: var(--cobalt); font-weight: 400; }
+    .error-text { max-width: 620px; margin: 34px 0 0; color: var(--muted); font-size: clamp(17px, 2vw, 20px); line-height: 1.7; }
+    .home-link { display: inline-flex; align-items: center; min-height: 58px; margin-top: 38px; padding: 0 24px; background: var(--cobalt); color: white; font-size: 14px; font-weight: 800; transition: background .2s, transform .2s; }
+    .home-link:hover { background: #2544bd; transform: translateY(-2px); }
+    .error-footer { position: relative; z-index: 1; margin: 0; color: #696661; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+
+    @media (max-width: 640px) {
+      .error-page { padding: 24px; }
+      .error-page::before { width: 115vw; right: -65%; }
+      .error-content { padding: 54px 0; }
+    }
+  </style>
+</head>
+<body>
+  <main class="error-page">
+    <a class="error-brand" href="/" aria-label="KF Solução Digital — página inicial">
+      <img src="/assets/kf-editorial-simbolo.svg" alt="" width="48" height="48">
+      <span aria-hidden="true"><strong>KF Solução</strong><small>Digital</small></span>
+    </a>
+
+    <section class="error-content" aria-labelledby="error-title">
+      <p class="error-code">Erro 404</p>
+      <h1 id="error-title">Esta página não está <em>aqui.</em></h1>
+      <p class="error-text">O endereço pode ter mudado ou não existir. Você pode voltar ao início e continuar conhecendo a KF Solução Digital.</p>
+      <a class="home-link" href="/">Voltar ao site</a>
+    </section>
+
+    <p class="error-footer">KF Solução Digital · Brasil</p>
+  </main>
+</body>
+</html>

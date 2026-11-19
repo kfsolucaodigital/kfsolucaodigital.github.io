@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kfsolucaodigital.github.io/sitemap.xml
